@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGINA PRINCIPAL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <figure>
+                <img src="assets/logo-IMRA.png" alt="logo-IMRA">
+            </figure>
+            <div class="container-Login">
+                <button>Iniciar Sesion<ion-icon name="log-in-outline"></ion-icon></button>
+                <button>Crear Cuenta<ion-icon name="person-add-outline"></ion-icon></button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Bienvenido</h1>
+            <figure>
+                <img src="assets/flame-chatbot.png" alt="flame-chatbot">
+            </figure>
+        </section>
+        <section class="container-Login_Register">
+            <aside id="section-login" class="contianer-form">
+                <h3>¡Bienvenido de nuevo!</h3>
+                <p>Ingrese sus credenciales para continuar.</p>
+                <form action="#">
+                    <div>
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" name="email" id="email-ingresar" placeholder="Correo Electronico" required>
+                    </div>
+                    <div>
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" name="password" id="password-ingresar" placeholder="Contraseña" required>
+                        <button type="button"><ion-icon name="eye-off-outline"></ion-icon></button>
+                    </div>
+                    <button type="button">Ingresar</button>
+                </form>
+                <div>
+                    <p>¿No tienes una cuenta?</p> <a href="#">Registrarse</a>
+                </div>
+            </aside>
+            <aside id="section-register" class="contianer-form">
+                <h3>¡Crear una cuenta!</h3>
+                <p>Regístrese para comenzar.</p>
+                <form action="#">
+                    <div>
+                        <ion-icon name="person-circle-outline"></ion-icon>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                    </div>
+                    <div>
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" name="email" id="email-registrar" placeholder="Correo Electronico" required>
+                    </div>
+                    <div>
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" name="password" id="password-registrar" placeholder="Contraseña" required>
+                        <button type="button"><ion-icon name="eye-off-outline"></ion-icon></button>
+                    </div>
+                    <div>
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirmar Contraseña" required>
+                        <button type="button"><ion-icon name="eye-off-outline"></ion-icon></button>
+                    </div>
+                    <button type="button">Registrarse</button>
+                </form>
+                <div>
+                    <p>¿Ya tienes una cuenta?</p> <a href="#">Ingresar</a>
+                </div>
+            </aside>
+        </section>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
