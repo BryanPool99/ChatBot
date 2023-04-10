@@ -1,0 +1,94 @@
+:root{
+    --mainColor:#F6F6F6;
+    --TextColorH:#169C89;
+    --TextInput:#999;
+    --borderInput:#B1B1B1;
+    --bgFooterLogin:#E8F3F2;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    border: 2px solid rebeccapurple;/*tmp*/
+    background-color: var(--mainColor);
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+header{
+    border: 2px solid black;/*tmp*/
+    padding: 1rem;
+}
+header nav{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+nav div{
+    border: 2px solid black;/*tmp*/
+    width: 35rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.container-Login button{
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    color: var(--TextColorH);
+    border-radius: .5rem;
+    border: 2px solid var(--borderInput);
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+    -ms-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+}
+.container-Login button:hover{
+    background: #169C89;
+    color: var(--mainColor);
+    font-weight: 600;
+}
+main{
+    border: 2px solid rgb(13, 209, 79);/*tmp*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+main section.container-Login_Register{
+    border: 2px solid rgb(7, 35, 119);/*tmp*/
+    display: flex;
+    padding: 1rem;
+    width: 25rem;
+    overflow-x: hidden;
+}
+aside#section-login{
+    width: 25rem;
+}
+aside#section-register{
+    border: 2px solid rgb(52, 119, 7);/*tmp*/
+    display: none;
+}
