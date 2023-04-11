@@ -10,7 +10,6 @@ const passwordInputs = document.querySelectorAll('input[type="password"]');
 //evnts
 btnCrearCuenta.forEach(e => {
     e.addEventListener("click",()=>{
-        console.log("di click");
         asideRegister.style.display="block";
         asideLogin.style.display="none";
 
@@ -18,7 +17,6 @@ btnCrearCuenta.forEach(e => {
 });
 btnIniciarSesion.forEach(e => {
     e.addEventListener("click",()=>{
-        console.log("di click");
         asideLogin.style.display="block";
         asideRegister.style.display="none";
     })
